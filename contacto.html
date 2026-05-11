@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Alejandro Parra Ramos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #E0E2E3 !important;
+            color: #BB5E28 !important;
+        }
+        .header {
+            background: rgba(224, 226, 227, 0.85) !important;
+        }
+        .header .logo, .nav a, .section-title, .contact-info h3, .contact-info p, .contact-info strong {
+            color: #BB5E28 !important;
+        }
+        .nav a::after {
+            background: #BB5E28 !important;
+        }
+        .section-title::after {
+            background: #BB5E28 !important;
+        }
+        .form-control {
+            color: #BB5E28 !important;
+            background: rgba(255, 255, 255, 0.8) !important;
+            border-color: #BB5E28 !important;
+        }
+        .form-control::placeholder {
+            color: rgba(187, 94, 40, 0.7) !important;
+        }
+        .footer p {
+            color: #BB5E28 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="header">
+        <a href="index.html" class="logo">APR</a>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Portafolio</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Contacto Section -->
+    <section class="section" style="padding-top: 150px; min-height: calc(100vh - 80px);">
+        <h2 class="section-title reveal">Ponte en Contacto</h2>
+        
+        <div class="grid-2">
+            <!-- Info -->
+            <div class="contact-info reveal-left">
+                <h3>Información de Contacto</h3>
+                <p style="margin-top: 20px;">
+                    ¿Tienes algún proyecto en mente o necesitas soporte técnico profesional? 
+                    No dudes en contactarme a través de los siguientes medios:
+                </p>
+                <div style="margin-top: 40px;">
+                    <p><strong>Email:</strong> alejandro.p.r1993@gmail.com</p>
+                    <p><strong>Teléfono:</strong> 33-4716-3486</p>
+                    <p><strong>Ubicación:</strong> Guadalajara, jal. México.</p>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form reveal-right">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Tu Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Alejandro Parra Ramos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

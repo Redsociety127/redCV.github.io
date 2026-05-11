@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Alejandro Parra Ramos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <header class="header">
+        <a href="index.html" class="logo">APR</a>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Portafolio</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="section" style="padding-top: 150px; min-height: calc(100vh - 80px);">
+        <h2 class="section-title reveal">Soporte Técnico</h2>
+        <p class="reveal" style="text-align: center; color: var(--text-muted); margin-bottom: 50px;">
+            Demostraciones y procesos en el área de soporte técnico.
+        </p>
+
+        <div class="skills-container reveal">
+            <!-- Soporte Técnico - Video 1 -->
+            <div class="card" style="margin: 0; display: flex; flex-direction: column; align-items: center;">
+                <div
+                    style="width: 100%; max-width: 320px; position: relative; aspect-ratio: 9/16; overflow: hidden; border-radius: 30px; margin: 15px auto 0;">
+                    <iframe src="https://drive.google.com/file/d/1BhU8MGt4EjgbUBKcwYaj4SB4aER-60kt/preview"
+                        style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: none;"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Soporte Técnico - Video 2 -->
+            <div class="card" style="margin: 0; display: flex; flex-direction: column; align-items: center;">
+                <div
+                    style="width: 100%; max-width: 320px; position: relative; aspect-ratio: 9/16; overflow: hidden; border-radius: 30px; margin: 15px auto 0;">
+                    <iframe src="https://drive.google.com/file/d/1ru6Cdw-VYaoOozrAdWQ_bZnhDjax18XA/preview"
+                        style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: none;"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Soporte Técnico - Video 3 -->
+            <div class="card" style="margin: 0; display: flex; flex-direction: column; align-items: center;">
+                <div
+                    style="width: 100%; max-width: 320px; position: relative; aspect-ratio: 9/16; overflow: hidden; border-radius: 30px; margin: 15px auto 0;">
+                    <iframe src="https://drive.google.com/file/d/1_RgaN-CgQx4az8AiLFmEFVi8V9xVuE77/preview"
+                        style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: none;"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Proyectos Web Section -->
+    <section class="section" style="padding-top: 50px; min-height: calc(100vh - 80px);">
+        <h2 class="section-title reveal">PROYECTOS WEB</h2>
+        <p class="reveal" style="text-align: center; color: var(--text-muted); margin-bottom: 50px;">
+            Desarrollo de sitios y plataformas web.
+        </p>
+
+        <div class="skills-container reveal" style="grid-template-columns: 1fr;">
+
+            <style>
+                .auto-carousel-container {
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    padding: 10px 0;
+                }
+
+                .auto-carousel-track {
+                    display: flex;
+                    width: 400%;
+                    animation: autoSlide 15s infinite ease-in-out;
+                }
+
+                .auto-carousel-track:hover {
+                    animation-play-state: paused;
+                }
+
+                .auto-carousel-track .slide {
+                    width: 25%;
+                    flex-shrink: 0;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                }
+
+                .auto-carousel-track img {
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                    display: block;
+                }
+
+                @keyframes autoSlide {
+
+                    0%,
+                    25% {
+                        transform: translateX(0);
+                    }
+
+                    33.33%,
+                    58.33% {
+                        transform: translateX(-25%);
+                    }
+
+                    66.66%,
+                    91.66% {
+                        transform: translateX(-50%);
+                    }
+
+                    100% {
+                        transform: translateX(-75%);
+                    }
+                }
+            </style>
+
+            <!-- BRIDGES LOOP -->
+            <div class="card" style="margin: 0;">
+                <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+
+                    <!-- Columna Izquierda: Carrusel -->
+                    <div
+                        style="flex: 1; min-width: 300px; display: flex; flex-direction: column; align-items: center; gap: 30px;">
+
+                        <!-- Carrusel Automático -->
+                        <div class="auto-carousel-container">
+                            <div class="auto-carousel-track">
+                                <div class="slide"><img src="media/Screen.png" alt="Bridges Loop Screen 1"></div>
+                                <div class="slide"><img src="media/Screen2.png" alt="Bridges Loop Screen 2"></div>
+                                <div class="slide"><img src="media/Screen3.png" alt="Bridges Loop Screen 3"></div>
+                                <div class="slide"><img src="media/Screen.png" alt="Bridges Loop Screen 1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Logo y Descripción -->
+                    <div
+                        style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+                        <!-- Logo con enlace -->
+                        <a href="https://branchloop-stack.github.io/branchloop.github.io/" target="_blank"
+                            rel="noopener noreferrer" style="margin-bottom: 10px; display: inline-block;">
+                            <img src="media/BRANCHED LOOP 2.png" alt="BRIDGES LOOP Logo"
+                                style="max-width: 200px; object-fit: contain; transition: transform 0.3s ease;"
+                                onmouseover="this.style.transform='scale(1.05)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                        </a>
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">BRIDGES LOOP</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light); text-align: justify;">
+                            Este proyecto busca brindar acceso a conocimientos estructurados, facilitando el aprendizaje
+                            y el desarrollo de habilidades tecnológicas.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- NAGUAL -->
+            <div class="card" style="margin: 0; margin-top: 20px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+
+                    <!-- Columna Izquierda: Carrusel -->
+                    <div
+                        style="flex: 1; min-width: 300px; display: flex; flex-direction: column; align-items: center; gap: 30px;">
+
+                        <!-- Carrusel Automático -->
+                        <div class="auto-carousel-container">
+                            <div class="auto-carousel-track" style="animation-delay: -7.5s;">
+                                <div class="slide"><img src="media/shot.png" alt="Nagual Screen 1"></div>
+                                <div class="slide"><img src="media/shot2.png" alt="Nagual Screen 2"></div>
+                                <div class="slide"><img src="media/shot3.png" alt="Nagual Screen 3"></div>
+                                <div class="slide"><img src="media/shot.png" alt="Nagual Screen 1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Descripción -->
+                    <div
+                        style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">NAGUAL</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light); text-align: justify;">
+                            Ayudamos a potenciar la presencia online de nuestros clientes mediante diseños modernos,
+                            eficientes y completamente funcionales. Aun en desarrollo.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- IMPRESION 42 -->
+            <div class="card" style="margin: 0; margin-top: 20px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+
+                    <!-- Columna Izquierda: Carrusel -->
+                    <div
+                        style="flex: 1; min-width: 300px; display: flex; flex-direction: column; align-items: center; gap: 30px;">
+
+                        <!-- Carrusel Automático -->
+                        <div class="auto-carousel-container">
+                            <div class="auto-carousel-track" style="animation-delay: -3s;">
+                                <div class="slide"><img src="media/hot.png" alt="Impresion 42 Screen 1"></div>
+                                <div class="slide"><img src="media/hot2.png" alt="Impresion 42 Screen 2"></div>
+                                <div class="slide"><img src="media/hot3.png" alt="Impresion 42 Screen 3"></div>
+                                <div class="slide"><img src="media/hot.png" alt="Impresion 42 Screen 1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Descripción -->
+                    <div
+                        style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">IMPRESION 42</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light); text-align: justify;">
+                            Se proporcionan soluciones de etiquetado de alta calidad para satisfacer las necesidades
+                            específicas de cada cliente y producto.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Alejandro Parra Ramos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
